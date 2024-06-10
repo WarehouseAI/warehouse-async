@@ -24,9 +24,6 @@ jobs:
         run: |
           echo "github.ref -> {{ github.ref }}"
 
-      - name: Build proto
-        run: make pb
-
   push-backend:
     runs-on: ubuntu-22.04
     needs: ['build_backend']
