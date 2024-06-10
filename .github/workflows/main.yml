@@ -28,7 +28,7 @@ jobs:
     runs-on: ubuntu-22.04
     needs: ['build_backend']
     env:
-      IMG_NAME: 'warehouse-user'
+      IMG_NAME: 'warehouse-async'
       IMG_REGISTRY: 'registry.warehousai.com'
 
     steps:
